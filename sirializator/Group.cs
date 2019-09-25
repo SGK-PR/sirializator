@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 
 namespace sirializator
 {
+    [Serializable]
     public class Group
     {
         private Random random = new Random(DateTime.Now.Millisecond);
@@ -32,7 +33,7 @@ namespace sirializator
 
         public override string ToString()
         {
-            return Number.ToString();
+            return (++Number).ToString() + " "+ Name ;
         }
 
     }

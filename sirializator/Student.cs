@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 
 namespace sirializator
 {
+    [Serializable]
     public  class Student
     {
         public  string Name { get; set; }
